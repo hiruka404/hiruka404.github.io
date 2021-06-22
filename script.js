@@ -68,12 +68,12 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
                         Swal.fire(`Huhu iya ${sender} juga kangen ${nama} , nanti ketemu yaa :((`).then(function () {
-                          Swal.fire('Terakhir deh sayang').then(function () {
+                          Swal.fire('Terakhir deh be').then(function () {
                             Swal.fire('Coba klik ikon hati di paling bawah dong')
                           })
                         })
                       } else if (result.isDenied) {
-                        Swal.fire('Jahat banget emang ga kangen sama pacar sendiri', '', 'error').then(function () {
+                        Swal.fire('Gilaa jahat banget emang ga kangen sama pacar sendiri', '', 'error').then(function () {
                           Swal.fire('Ywdh bye')
                         })
                       }
