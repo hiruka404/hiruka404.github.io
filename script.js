@@ -12,12 +12,12 @@ if (url.searchParams.get('by') != null) {
 
 let footer = document.getElementById("credit");
 footer.innerHTML = sender;
-footer.href = "https://www.instagram.com/adamukti/";
+footer.href = "https://www.instagram.com/tersangka17";
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo Sayangku", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
-    Swal.fire("Jawab yang jujur ya!").then(function () {
-      Swal.fire("Awas aja kalo boong!!", "", "error").then(function () {
+  Swal.fire("Hilliw Bebi", "ada pertanyaan nih buat kamu", "question").then(function () {
+    Swal.fire("Jawab yang jujur yaaaw").then(function () {
+      Swal.fire("Awas aja kalo boong >:(", "", "error").then(function () {
 
         const {
           value: name
@@ -48,7 +48,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   title: 'Seberapa sayang emangnya?',
                   icon: 'question',
                   input: 'range',
-                  inputLabel: 'Antara 1 - 100 ya',
+                  inputLabel: 'Antara 1 - 100',
                   inputAttributes: {
                     min: 1,
                     max: 100,
@@ -74,7 +74,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                         })
                       } else if (result.isDenied) {
                         Swal.fire('Jahat banget emang ga kangen sama pacar sendiri', '', 'error').then(function () {
-                          Swal.fire('Yaudah deh bye!')
+                          Swal.fire('Ywdh bye')
                         })
                       }
                     })
@@ -83,7 +83,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
               })
             } else if (result.isDenied) {
               Swal.fire(`Yakin ga suka sama ${sender}?`, '', 'error').then(function () {
-                Swal.fire('Yaudah deh bye!')
+                Swal.fire('Ywdh bye')
               })
             }
           })
